@@ -8,9 +8,18 @@
 
     //ENTRADA
 
+    let numeros = []
+
+    for (let index = 1; index <= 5; index++) {
+        const pergunta = Number(prompt(`Insira um número:`));
+        numeros.push(pergunta)
+    }
+    numeros.reverse()
+    
 
     //PROCESSAMENTO
 
+    alert(`O maior número informado é: ${numeros[0]}`)
 
     //SAÍDA
 
