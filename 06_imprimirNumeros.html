@@ -7,10 +7,28 @@
 
     //ENTRADA
 
-    
+    const numeroI = Number(prompt(`Informe um número inicial:`));
+    const numeroF = Number(prompt(`Informe um número final:`));
+    let par = []
+    let impar = []
+
     //PROCESSAMENTO
 
-    
+    if (numeroI >= numeroF) {
+        alert(`ERRO!`)
+    }
+    else {
+        for (let index = numeroI; index <= numeroF; index++) {
+            if (index % 2 == 0 && index != numeroI && index != numeroF) {
+                par.push(index)
+            } else if (index % 2 != 0 && index != numeroI && index != numeroF) {
+                impar.push(index)
+            }
+        }
+        document.write(`Números pares entre ${numeroI} e ${numeroF}: ${par} <br>Números ímpares entre ${numeroI} e ${numeroF}: ${impar} `)
+    }
+
+
     //SAÍDA
 
 </script>
