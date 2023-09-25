@@ -7,10 +7,24 @@
 
     //ENTRADA
 
+    const pergunta = Number(prompt(`Informe um número:`))
+    let num = []
+   
 
     //PROCESSAMENTO
 
+    for (let index = 2; index < pergunta; index++) {
+        num.push(pergunta % index)
+    }
+    if (num.includes(0) === false) {
+        alert(`Esse número é primo.`)
+    }
+    else{
+        alert(`Esse número não é primo.`)
+    }
 
     //SAÍDA
+
+   
 
 </script>
