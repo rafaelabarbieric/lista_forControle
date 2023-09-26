@@ -7,8 +7,18 @@
 
     //ENTRADA
 
+   
+    let soma = 0
 
     //PROCESSAMENTO
+
+    for (let index = 1; index <= 5; index++) {
+        const pergunta = Number(prompt(`Informe um número:`))
+        soma = soma + pergunta
+    }
+    document.write(`A soma dos números é: ${soma} <br> E a média dos número é: ${(soma/5).toFixed(2).replace(".",",")}`)
+   
+
 
 
     //SAÍDA
