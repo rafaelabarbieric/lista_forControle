@@ -7,19 +7,19 @@
     */
 
     //ENTRADA
-    
+
     const qNotas = Number(prompt(`Informe quantas notas o seu aluno obteve:`));
-    let media = 0
+    let media = 0;
 
     //PROCESSAMENTO
 
     for (let index = 1; index <= qNotas; index++) {
         const valorN = Number(prompt(`Informe o valor da nota:`));
-        media = media + valorN
+        media = media + valorN;
     }
 
     //SAÍDA
 
-    document.write(`A média do aluno é: ${media/qNotas.toFixed(2).replace(".",",")}`)
+    document.write(`A média do aluno é: ${media / qNotas.toFixed(2).replace(".", ",")}`);
 
 </script>

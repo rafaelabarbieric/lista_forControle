@@ -13,20 +13,20 @@
 
     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
     let listaUnica = [];
-    
+
     //PROCESSAMENTO
 
     for (let contador = 0; contador < listaDeLetras.lengt; contador++) {
         const letras = listaDeLetras[contador].toLowerCase();
-        if(listaUnica.includes(letras) === false){
+        if (listaUnica.includes(letras) === false) {
             listaUnica.push(letras);
         }
     }
 
-    
-    
+
+
     //SAÍDA
 
-    document.write(`A nova lista de letras é: ${listaUnica.sort()}`)
+    document.write(`A nova lista de letras é: ${listaUnica.sort()}`);
 
 </script>

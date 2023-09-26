@@ -9,23 +9,23 @@
 
     const numeroI = Number(prompt(`Informe um número inicial:`));
     const numeroF = Number(prompt(`Informe um número final:`));
-    let par = []
-    let impar = []
+    let par = [];
+    let impar = [];
 
     //PROCESSAMENTO
 
     if (numeroI >= numeroF) {
-        alert(`ERRO!`)
+        alert(`ERRO!`);
     }
     else {
         for (let index = numeroI; index <= numeroF; index++) {
             if (index % 2 == 0 && index != numeroI && index != numeroF) {
-                par.push(index)
+                par.push(index);
             } else if (index % 2 != 0 && index != numeroI && index != numeroF) {
-                impar.push(index)
+                impar.push(index);
             }
         }
-        document.write(`Números pares entre ${numeroI} e ${numeroF}: ${par} <br>Números ímpares entre ${numeroI} e ${numeroF}: ${impar} `)
+        document.write(`Números pares entre ${numeroI} e ${numeroF}: ${par} <br>Números ímpares entre ${numeroI} e ${numeroF}: ${impar} `);
     }
 
 
