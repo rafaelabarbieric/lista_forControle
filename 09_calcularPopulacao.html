@@ -7,10 +7,19 @@
 
     //ENTRADA
 
+    let anos = 1;
+    let habitantes = 50000;
+    let quantidade = [];
     
     //PROCESSAMENTO
-    
 
+    for (anos = 1; anos <= 10; anos++) {
+        habitantes = habitantes * 1.015;
+        quantidade.push(habitantes);
+    }
+    
     //SAÍDA
+
+    document.write(`A população prevista para um prazo de 5 anos é ${Math.floor(quantidade[4])} <br> A população prevista para um prazo de 10 anos é ${Math.floor(quantidade[9])}`);
 
 </script>
