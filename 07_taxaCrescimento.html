@@ -7,15 +7,17 @@
 
     //ENTRADA
 
-    const porcentagem = 80000*0.03 
-    for (let index = 80000; index <= 200000; index =+ porcentagem) {
-        const element = array[index];
-        
-    }
+    let anos = 1;
+    let habitantes = 80000;
     
     //PROCESSAMENTO
 
-    
+    for (anos = 1; habitantes <= 200000; anos++) {
+        habitantes = habitantes * 1.03;
+    }
+
     //SAÍDA
+
+    document.write(`Serão necessários ${anos} para que a população atinja 200000 habitantes`);
 
 </script>
