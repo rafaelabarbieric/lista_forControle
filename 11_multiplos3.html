@@ -6,10 +6,18 @@
 
     //ENTRADA
 
+    let mlt3 = 0;
 
     //PROCESSAMENTO
 
+    for (let index = 1; index <= 100; index++) {
+        if (index%3 === 0) {
+          mlt3 = mlt3 + index;
+        }
+    }
 
     //SAÍDA
+
+    document.write(`A soma dos números multiplos de 3 é: ${mlt3}.`)
 
 </script>
