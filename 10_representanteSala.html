@@ -9,10 +9,35 @@
 
     //ENTRADA
 
+    let candidatos = [];
+    let cdt1 = 0;
+    let cdt2 = 0;
+    let cdt3 = 0;
 
     //PROCESSAMENTO
 
+    for (let nomes = 1; nomes <= 3; nomes++) {
+        const perguntas = prompt(`Insira o nome do ${nomes} candidato a representante:`);
+        candidatos.push(perguntas); 
+    }
+    
+    const qntAlunos = Number(prompt(`Informe a quantidade de alunos que irão votar:`));
+
+    for (let index = 1; index <= qntAlunos; index++) {
+        const votos = Number(prompt(`Você gostaria de votar para 1-${candidatos[0]}, 2-${candidatos[1]} ou 3-${candidatos[2]}`));
+        if (votos === 1) {
+            cdt1++;
+        } 
+        else if (votos === 2) {
+            cdt2++;
+        }
+        else{
+            cdt3++;
+        }
+    }
 
     //SAÍDA
+
+    document.write(`${candidatos[0]} teve ${cdt1} votos e a porcentagem é ${(qntAlunos*100/cdt1)} <br> ${candidatos[1]} teve ${cdt2} votos e a porcentagem é ${(qntAlunos*100/cdt2)} <br> ${candidatos[2]} teve ${cdt3} votos e a porcentagem é ${(qntAlunos*100/cdt3)}`);
 
 </script>
